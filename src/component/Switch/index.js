@@ -1,5 +1,6 @@
 import React from 'react'
+import '../Switch/index.less'
 const Switch=()=>{
-  return (<div>switchsssss</div>)
+  return (<div className='a'>switchsssss</div>)
 }
 export default Switch

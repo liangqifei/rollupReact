@@ -4,6 +4,7 @@ import { uglify } from 'rollup-plugin-uglify'
 // uglify(),
 import postcss from 'rollup-plugin-postcss';
 import cModuleMap from './cModuleMap'
+import cModuleMapCss from './sss'
 import clear from 'rollup-plugin-clear';
 export default {
   // 核心选项
@@ -14,18 +15,7 @@ export default {
     runtimeHelpers: true
   }), clear({
     targets: ['lib']
-  }),postcss({
-    // modules: true, // 增加 css-module 功能
-    extensions: ['.less', '.css'],
-    use: [
-      ['less', {
-        javascriptEnabled: true
-      }]
-    ],
-    inject: true, // dev 环境下的 样式是入住到 js 中的，其他环境不会注入
-    // 样式输出到 createModuleConfig 创建的模块文件夹下
-    extract: `style/[name]/index.css` 
-  }), uglify()],
+  }), postcss({ modules: true, inject:true}), uglify()],
 
   output: {  // 必须 (如果要输出多个，可以是一个数组)
     // 核心选项r:'',
