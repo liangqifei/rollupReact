@@ -1,12 +1,17 @@
 {
-  "name": "build",
-  "version": "1.0.0",
-  "description": "",
+  "name": "lqf-react-libiry",
+  "version": "1.0.1",
+  "description": "react 组件库",
   "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn run rollup -c",
     "start": "yarn run rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liangqifei/rollupReact",
+    "directory": "lib"
   },
   "author": "",
   "license": "ISC",
