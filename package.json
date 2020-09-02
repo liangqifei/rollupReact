@@ -1,0 +1,27 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn run rollup -c",
+    "start": "yarn run rollup -c -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "less": "^3.12.2",
+    "rollup": "^2.26.9",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-postcss": "^3.1.8",
+    "rollup-plugin-uglify": "^6.0.4",
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}
