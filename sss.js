@@ -1,4 +1,4 @@
-// 通过 mode 接口拿到 src/components 下的所有文件夹名作为打包后的模块
+﻿// 通过 mode 接口拿到 src/components 下的所有文件夹名作为打包后的模块
 const fs = require('fs');
 const path = require('path');
 const componentDir = 'src/component';
@@ -9,3 +9,5 @@ cModuleNames.forEach((name, index) => {
   cModuleMapCss[key] = `${componentDir}/${name}/index.less`
 })
 export default cModuleMapCss;
+
+//SSSS
